@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(55, 49, 49);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('../IMAGE/black-wireless-headphones-yellow-background-top-view-copyspace_72464-589.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+    /*background: red;*/
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child {
+    color: #00b894;
+}
+
+main {
+    height: 100%;
+    width: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+}
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    color: #eee;
+    white-space: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: #00b894;
+    color: white;
+}
+
+section .btntwo {
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover {
+    background: #fff;
+    color: #000;
+}
+
+.change_content:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Gaining expert advice on careers"
+    }
+    20% {
+        content: "Exploring different careers options"
+    }
+    35% {
+        content: "Set objective for Greater Results"
+    }
+    60% {
+        content: " Get to know the availabilities"
+    }
+    80% {
+        content: "Support and motivation"
+    }
+    100% {
+        content: "Get right path"
+    }
+}
+
+.div2 {
+    margin-top: 30px;
+    padding-left: 5px;
+    margin-left: 15px;
+}
+
+h2 {
+    text-align: center;
+    color: #aaa;
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: dashed;
+}
+
+.table-wrapper {
+    height: fit-content;
+    width: 90vw;
+    max-height: 60vh;
+    margin: 15px;
+    padding-bottom: 20px;
+}
+
+table {
+    width: 90vw;
+    min-width: max-content;
+    border-collapse: separate;
+    border-spacing: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.t1 {
+    padding-left: 5px;
+}
+
+.table-filter {
+    border-radius: 5px;
+}
+
+table th {
+    position: sticky;
+    top: 0px;
+    background-color: #13936f;
+    color: rgb(241, 245, 179);
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+    outline: 0.7px solid black;
+    border: 1.5px solid black;
+    padding: 10px 0;
+}
+
+table td {
+    color: #aaa;
+    padding: 10px;
+    background-color: black;
+}
+
+.my {
+    border: 2px solid black;
+    margin-top: 40px;
+}
+
+.r {
+    margin-left: 40%;
+    align-items: center;
+}
+
+.fo {
+    margin-top: 20px;
+    width: 20vw;
+    height: 30vh;
+    margin-left: 40%;
+}
+
+input[type=button] {
+    background: #fff;
+    color: #000;
+    width: 100px;
+    height: 30px;
+    font-size: bold;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    margin-left: 5%;
+    margin-top: 50px;
+    color: white;
+    background-color: rgb(32, 32, 198);
+    text-decoration: none;
+    font-size: bold;
+    border-radius: 5px;
+    border-color: white;
+    width: 100px;
+    height: 30px;
+    color: #aaa;
+}
+
+.submit .submit-btn {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #13916f, rgb(37, 36, 36));
+    margin-top: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    height: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
